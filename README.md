@@ -64,4 +64,6 @@ python chair.py --cap_file /path/to/jsonl --image_id_key image_id --caption_key 
 
 ```
 ## Acknowledgement
-This repo is based on the MLLM codebase of [LAVIS](https://github.com/salesforce/LAVIS) and [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) and the CHAIR code of [Maxlinn](https://github.com/Maxlinn/CHAIR-metric-standalone) and [OPERA](https://github.com/shikiw/OPERA). Thanks for their impressive works!
+This repository is built upon the MLLM codebase from [LAVIS](https://github.com/salesforce/LAVIS) and [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4), as well as the CHAIR evaluation code from [Maxlinn](https://github.com/Maxlinn/CHAIR-metric-standalone) and [OPERA](https://github.com/shikiw/OPERA).  
+
+We sincerely appreciate their outstanding contributions to the community.
