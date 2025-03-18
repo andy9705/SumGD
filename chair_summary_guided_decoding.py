@@ -154,7 +154,7 @@ norm = transforms.Normalize(mean, std)
 
 import json
 
-with open("/home/kyungmin/emnlp2024/OPERA/MSCOCO_val_2014_img_files.json",'r') as f: ## your image location.
+with open("/~your image location",'r') as f: ## your image location.
     json_data=json.load(f)
 
 
@@ -192,9 +192,7 @@ for i in tqdm(range(0,200)): ## Image Indexes
             )
 
     img_save["caption"] = out[0]
-    print(out[0])
     
-    break
     
     with open(args.result_path, "a") as f:
         json.dump(img_save, f)
