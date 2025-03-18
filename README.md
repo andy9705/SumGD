@@ -42,9 +42,11 @@ python chair_summary_guided_decoding.py --model llava-1.5 --sumgd_mode sumgd-s -
 
 ### SumGD-D (Distilled Summary Guidance)
 python chair_summary_guided_decoding.py --model llava-1.5 --sumgd_mode sumgd-d --max_new_token 512 --min_new_token 1 --result_path /path/to/save/jsonl
+```
 
-### Base Decoding
 If you want to use standard decoding methods instead of Summary-Guided Decoding, modify the following code in chair_summary_guided_decoding.py:
+```
+### Base Decoding
 with torch.inference_mode():
         with torch.no_grad():
             out = model.generate( 
@@ -53,8 +55,8 @@ with torch.inference_mode():
             max_new_tokens=args.max_new_token,
             min_new_tokens=args.min_new_token, summary_guided_decoding=True # Set to False for standard decoding
             )
-
 ```
+
 
 ### Compute CHAIR Scores
 
