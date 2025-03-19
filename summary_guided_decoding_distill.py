@@ -358,7 +358,7 @@ def summary_guided_decoding(
 
         from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
         ## Distilled_summarizer_load
-        last_checkpoint = "/home/kyungmin/my_project/OPERA/caption-summary-training-flan-t5-base-20240912-real/checkpoint-20910"  
+        last_checkpoint = "./distilled_flan_t5_checkpoint"  
         distilled_summarize_model = AutoModelForSeq2SeqLM.from_pretrained(last_checkpoint) 
         summarize_tokenizer = AutoTokenizer.from_pretrained('google/flan-t5-base')
 
