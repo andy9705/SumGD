@@ -115,11 +115,19 @@ args = parser.parse_known_args()[0]
 
 
 if args.sumgd_mode == "sumgd-s": ### sumgd-s
-    from summary_guided_decoding import summary_guided_decoding_function
-    summary_guided_decoding_function()
+    if args.model == "llava-1.5":
+        from summary_guided_decoding import summary_guided_decoding_function
+        summary_guided_decoding_function()
+    if args.model == "instructblip":
+        from summary_guided_decoding_instructblip import summary_guided_decoding_function
+        summary_guided_decoding_function()
 elif args.sumgd_mode == "sumgd-d":
-    from summary_guided_decoding_distill import summary_guided_decoding_function
-    summary_guided_decoding_function()
+    if args.model == "llava-1.5":
+        from summary_guided_decoding_distill import summary_guided_decoding_function
+        summary_guided_decoding_function()
+    if args.model == "instructblip":
+        from summary_guided_decoding_distill_instructblip import summary_guided_decoding_function
+        summary_guided_decoding_function()
 
 
 
