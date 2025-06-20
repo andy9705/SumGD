@@ -59,7 +59,7 @@ Generate responses using our Summary-Guided Decoding approach:
 ```bash
 # SumGD-S (Self-Summary Guidance)
 python chair_summary_guided_decoding.py \
-  --model llava-1.5 \
+  --model llava-1.5 \ #or instructblip
   --sumgd_mode sumgd-s \
   --max_new_token 512 \
   --min_new_token 1 \
@@ -67,7 +67,7 @@ python chair_summary_guided_decoding.py \
 
 # SumGD-D (Distilled Summary Guidance)
 python chair_summary_guided_decoding.py \
-  --model llava-1.5 \
+  --model llava-1.5 \ #or instructblip
   --sumgd_mode sumgd-d \
   --max_new_token 512 \
   --min_new_token 1 \
