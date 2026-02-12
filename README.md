@@ -116,13 +116,25 @@ We sincerely appreciate their contributions to the research community.
 If you find our work useful, please consider citing our paper:
 
 ```bibtex
-@misc{min2025mitigatinghallucinationslargevisionlanguage,
-      title={Mitigating Hallucinations in Large Vision-Language Models via Summary-Guided Decoding}, 
-      author={Kyungmin Min and Minbeom Kim and Kang-il Lee and Dongryeol Lee and Kyomin Jung},
-      year={2025},
-      eprint={2410.13321},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2410.13321}, 
+@inproceedings{min-etal-2025-mitigating,
+    title = "Mitigating Hallucinations in Large Vision-Language Models via Summary-Guided Decoding",
+    author = "Min, Kyungmin  and
+      Kim, Minbeom  and
+      Lee, Kang-il  and
+      Lee, Dongryeol  and
+      Jung, Kyomin",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.235/",
+    doi = "10.18653/v1/2025.findings-naacl.235",
+    pages = "4183--4198",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Large Vision-Language Models (LVLMs) demonstrate impressive capabilities in generating detailed and coherent responses from visual inputs.However, they are prone to generate hallucinations due to an over-reliance on language priors. To address this issue, we investigate the language priors in LVLMs and make two key observations: (1) Even when predicting the tokens associated with image-related part-of-speech (POS), models increasingly rely on linguistic priors as the token sequences grow, thereby amplifying hallucinations. (2) Methods that directly calibrate LVLM{'}s output distribution to mitigate language priors can lead to a degradation in text quality or even exacerbate hallucinations.Based on these findings, we propose a novel method, \textbf{Sum}mary-\textbf{G}uided \textbf{D}ecoding \textbf{(SumGD)}. This method naturally encourages the model to focus more on image information by reducing the text context through summaries, while controlling only the image-related POS tokens to maintain text quality.Through experiments, we demonstrate that SumGD achieves state-of-the-art performance on object hallucination benchmarks. Furthermore, in terms of the trade-off between precision and recall, SumGD achieves Pareto optimality among the existing methods.Lastly, we observe that although existing methods struggle to balance the reduction of object hallucinations with maintaining text quality, SumGD demonstrates robustness in handling this challenge."
 }
 ```
